@@ -1,0 +1,7 @@
+\node_modules
+*.code-workspace
+.DS_Store
+.ds_store
+
+# dotenv environment variables file
+.env
