@@ -5,10 +5,12 @@ const cors = require('cors');
 const app = express();
 const config = require('config');
 
+const dbURI = config.get('dbURI');
+
 mongoose
   .set('useCreateIndex', true)
   .set('useFindAndModify', false)
-  .connect(config.get('dbURI'), { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log(`Connected to ${dbURI}...`))
   .catch(err => console.log('Could not connect to MongoDB...', err));
 
