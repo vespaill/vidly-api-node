@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const _ = require('lodash');
-const { User, validate } = require('../models/user');
+const { User, validate } = require('../models/User');
 
 const getOneUser = async (req, res) => {
   const user = await User.findById(req.user._id).select('-password');
