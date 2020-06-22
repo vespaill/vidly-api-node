@@ -38,7 +38,7 @@ router
 
 /* ---------------------------------- User ---------------------------------- */
 router.route('/users/me').get(auth, ctrlUsers.getOneUser);
-router.route('/users/').post(ctrlUsers.createNewUser);
+router.route('/users').post(ctrlUsers.createNewUser);
 router.route('/auth').post(ctrlAuthenticate);
 
 module.exports = router;
