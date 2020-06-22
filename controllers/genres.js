@@ -28,7 +28,7 @@ const createNewGenre = async ({ body }, res) => {
  */
 const getOneGenre = async ({ params: { id: genreId } }, res) => {
   debug(`Getting genre with id of ${genreId}...`);
-  const genre = await Genre.findById(genreId).select('-__v');;
+  const genre = await Genre.findById(genreId).select('-__v');
 
   if (!genre)
     return res.status(404).send('The genre with the given id was not found');
@@ -44,8 +44,8 @@ const updateOneGenre = async ({ params: { id: genreId }, body }, res) => {
   const { error } = validate(body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genre = await Genre.findByIdAndUpdate(
-    genreId,
+  const genre = await Genre.findOneAndUpdate(
+    { _id: genreId },
     { name: body.name },
     { new: true }
   );

@@ -60,6 +60,7 @@ const updateOneMovie = async ({ params: { id: movieId }, body }, res) => {
   const genre = await Genre.findById(body.genreId);
   if (!genre) return res.status(400).send('Invalid genre.');
 
+  const filter = { _id: movieId };
   const update = {
     title: body.title,
     genre: { _id: genre._id, name: genre.name },
@@ -67,7 +68,7 @@ const updateOneMovie = async ({ params: { id: movieId }, body }, res) => {
     dailyRentalRate: body.dailyRentalRate,
     liked: body.liked
   };
-  const movie = await Movie.findByIdAndUpdate(movieId, update, { new: true });
+  const movie = await Movie.findOneAndUpdate(filter, update, { new: true });
 
   if (!movie)
     return res.status(404).send('The movie with the given ID was not found.');
