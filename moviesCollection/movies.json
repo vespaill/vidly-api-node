@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Terminator",
+    "genreId": "5eeedb14a815d149803bdb14",
+    "numberInStock": 6,
+    "dailyRentalRate": 2.5
+  },
+  {
+    "title": "Die Hard",
+    "genreId": "5eeedb14a815d149803bdb14",
+    "numberInStock": 5,
+    "dailyRentalRate": 2.5
+  },
+  {
+    "title": "Get Out",
+    "genreId": "5eeedb3ba815d149803bdb16",
+    "numberInStock": 8,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "Trip to Italy",
+    "genreId": "5eeedb37a815d149803bdb15",
+    "numberInStock": 7,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "Airplane",
+    "genreId": "5eeedb37a815d149803bdb15",
+    "numberInStock": 7,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "Wedding Crashers",
+    "genreId": "5eeedb37a815d149803bdb15",
+    "numberInStock": 7,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "Gone Girl",
+    "genreId": "5eeedb3ba815d149803bdb16",
+    "numberInStock": 7,
+    "dailyRentalRate": 4.5
+  },
+  {
+    "title": "The Sixth Sense",
+    "genreId": "5eeedb3ba815d149803bdb16",
+    "numberInStock": 4,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "The Avengers",
+    "genreId": "5eeedb14a815d149803bdb14",
+    "numberInStock": 7,
+    "dailyRentalRate": 3.5
+  },
+  {
+    "title": "Test movie",
+    "genreId": "5eeedb37a815d149803bdb15",
+    "numberInStock": 1,
+    "dailyRentalRate": 2
+  }
+]
